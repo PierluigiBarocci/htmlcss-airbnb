@@ -25,13 +25,32 @@ body {
 .Paris {
     background-image: url(images/parigi.jpg);
     background-position: right;
+    position: relative;
 }
+
+.Lione {
+    background-image: url(images/lione.jpg);
+    position: relative;
+}
+
+.Strasburgo {
+    background-image: url(images/strasburgo.jpg);
+    position: relative;
+}
+
+.Bordeaux {
+    background-image: url(images/bordeaux.jpg);
+    position: relative;
+}
+
+/* provo ad avventurarmi con gli em anziche px per le font-size;
+facendo la divisione il risultato é simile */
 
 .center {
     text-align: center;
     color: white;
     font-weight: bold;
-    font-size: 90px;
+    font-size: 5.5em;
     text-shadow: 0 0 3px black;
     position: absolute;
     top: 50%;
@@ -40,7 +59,7 @@ body {
 }
 
 .description {
-    font-size: 35px;
+    font-size: 0.3em;
     font-weight: normal;
     font-style: italic;
 }
