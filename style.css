@@ -77,8 +77,9 @@ facendo la divisione il risultato é simile */
 /* iniziamo a giocare con i bottoni social, l'ho creati nel mio playground separatamente, adesso vediamo inserendoli cosa accade, sicuramente dovro regolare altezze e larghezze */
 .father {
     position: relative;
-    height: 50vh;
+    height: 30vh;
     width: 100%;
+
     /* border-bottom: 3px solid white; */
 }
 
@@ -111,3 +112,63 @@ facendo la divisione il risultato é simile */
 }
 
 /* non male... la responsiveness si va un po' a far benedire ma, se si riducono i margini delle varie <a> a 10 px, il risultato é piacevole (linear-gradient è una funzione stupenda, la metterò ovunque da ora in poi) */
+#fatherSecondo {
+    position: relative;
+    height: 70vh;
+    width: 100%;
+}
+.servizi {
+    position: absolute;
+    top: 25%;
+}
+.div-servizi {
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient(45deg,#22a6b3,#30336b);
+    border-radius: 10%;
+}
+
+.div-servizi a {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border: 2px solid white;
+    color: white;
+    background: linear-gradient(45deg,orange,red);
+    margin: 10px;;
+    font-size: 40px;
+    position: relative;
+    border-radius: 50%;
+}
+
+[class*="fas"] {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tit1 {
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 10px;
+    text-shadow: 0 0 3px black;
+
+}
+
+.titLorem {
+    display: inline-block;
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
+    text-shadow: 0 0 3px black;
+    text-align: justify;
+    padding: 5px;
+}
+/* 
+aggiunta sessione "servizi" ma, facendo due blocchi distinti rispetto ai social buttons, in fondo perdiamo un po di responsive, da correggere unendoli in un unico div da 100vh */
