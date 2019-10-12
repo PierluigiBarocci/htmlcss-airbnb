@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(82, 142, 237, 0.75);
 }
 
 .container {
@@ -15,7 +16,7 @@ body {
     height: 100vh;
     width: 100%;
     filter: blur(10px);
-    transition: all 1000ms;
+    transition: all 600ms;
 }
 /* proviamo ad aggiungere questo filtro blur per poi toglierlo con un hover,
 vediamo cosa viene fuori */
@@ -72,3 +73,41 @@ facendo la divisione il risultato é simile */
     filter: blur(0px);
 }
 /* ok, il risultato alla fine c'e`, ma è veramente cafone, lo lascio lo stesso tanto stiamo provando */
+
+/* iniziamo a giocare con i bottoni social, l'ho creati nel mio playground separatamente, adesso vediamo inserendoli cosa accade, sicuramente dovro regolare altezze e larghezze */
+.father {
+    position: relative;
+    height: 50vh;
+    width: 100%;
+    /* border-bottom: 3px solid white; */
+}
+
+.social-buttons{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.social-buttons a{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border: 2px solid white;
+    color: white;
+    background: linear-gradient(45deg,#22a6b3,#30336b);
+    margin: 10px;;
+    font-size: 40px;
+    position: relative;
+    border-radius: 50%;
+}
+
+[class*="fab"] {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* non male... la responsiveness si va un po' a far benedire ma, se si riducono i margini delle varie <a> a 10 px, il risultato é piacevole (linear-gradient è una funzione stupenda, la metterò ovunque da ora in poi) */
