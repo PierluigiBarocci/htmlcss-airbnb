@@ -14,7 +14,11 @@ body {
     background-position: center;
     height: 100vh;
     width: 100%;
+    filter: blur(10px);
+    transition: all 1000ms;
 }
+/* proviamo ad aggiungere questo filtro blur per poi toglierlo con un hover,
+vediamo cosa viene fuori */
 
 .city {
     background-color: rgba(0, 0, 0, 0.6);
@@ -63,3 +67,8 @@ facendo la divisione il risultato é simile */
     font-weight: normal;
     font-style: italic;
 }
+
+.container:hover {
+    filter: blur(0px);
+}
+/* ok, il risultato alla fine c'e`, ma è veramente cafone, lo lascio lo stesso tanto stiamo provando */
