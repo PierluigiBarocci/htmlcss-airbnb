@@ -7,6 +7,36 @@
         <title>Bienvenue en France</title>
     </head>
     <body>
+
+        <div class="container accesso">
+            <div class="BienvenueFra">
+                <img src="images/logo.png" alt="logo">
+            </div>
+            <div class="fotoVarie">
+                <div id="parigi"></div>
+                <div id="lione"></div>
+                <div id="bordeaux"></div>
+                <div id="strasburgo"></div>
+            </div>
+            <div id="formulario">
+                <form class="form" action="index.html" method="post">
+                    <label for="desti">Dove vuoi andare?</label>
+                    <input type="text" id="desti" name="destinazione" placeholder="La tua destinazione">
+
+                    <label for="calendario">Quando vuoi partire?</label>
+                    <input type="date" id="calendario" name="calendario">
+
+                    <label for="visitatori">Numero di viaggiatori</label>
+                    <select id="visitatori" name="visitatori">
+                      <option value="primo">1</option>
+                      <option value="secondo">2</option>
+                      <option value="terzo">3 o +</option>
+                    </select>
+                    <input type="submit" value="Cerca">
+                </form>
+            </div>
+        </div>
+
         <div class="container Paris">
             <div class="city">
                 <div class="center">

@@ -177,3 +177,112 @@ facendo la divisione il risultato é simile */
 }
 
 /* aggiunta sessione "servizi", manca un header con gli input e un piccolo footer... A DOMANI BELLO!! */
+
+
+.accesso {
+    position: relative;
+    filter: blur(0px);
+}
+
+
+.fotoVarie {
+    position: absolute;
+    width: 85vw;
+    display: inline-block;
+    text-align: center;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+}
+
+#formulario {
+    position: absolute;
+    width: 45vw;
+    display: inline-block;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    top: 35%;
+    left: 68%;
+    transform: translate(-50%, -50%);
+}
+
+.BienvenueFra {
+    display: inline-block;
+    position: absolute;
+    top: 35%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+
+.BienvenueFra img {
+    height: 60vh;
+}
+
+#parigi {
+    background-image: url(images/parigi.jpg);
+    display: inline-block;
+    width: 20vw;
+    height: 20vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+#lione {
+    background-image: url(images/lione.jpg);
+    display: inline-block;
+    width: 20vw;
+    height: 20vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+#bordeaux {
+    background-image: url(images/bordeaux.jpg);
+    display: inline-block;
+    width: 20vw;
+    height: 20vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+#strasburgo {
+    background-image: url(images/strasburgo.jpg);
+    display: inline-block;
+    width: 20vw;
+    height: 20vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+input[type=text], #visitatori {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0.8);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: red;
+}
